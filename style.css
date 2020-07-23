@@ -83,10 +83,7 @@ hr {
     margin-top: -15px;
 }
 
-#SeccionTecnologias {
-    margin-top: 250px;
-    margin-bottom: 250px;
-}
+#SeccionTecnologias {}
 
 #Label-Tecnologias {
     margin-top: 50px;
@@ -138,7 +135,6 @@ hr {
     align-items: center;
     text-align: center;
     width: 100%;
-    margin-top: 200px;
     margin-bottom: 200px;
 }
 
