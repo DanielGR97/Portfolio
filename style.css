@@ -1,190 +1,226 @@
-html {
-    scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-
-/* Track */
-
- ::-webkit-scrollbar-track {
-    background: #888;
-}
-
-
-/* Handle */
-
- ::-webkit-scrollbar-thumb {
-    background: #555;
-    border-radius: 5px;
-}
-
-
-/* Handle on hover */
-
- ::-webkit-scrollbar-thumb:hover {
-    background: #35383D;
-}
-
-hr {
-    width: 75%;
-}
-
-.hr-card {
-    width: 100%;
-}
-
-.navbar {
-    position: fixed;
-    width: 100%;
-    opacity: 70%;
-    background-color: #1F1E22;
-    z-index: 1;
-    height: 60px;
-}
-
-.navbar-collapse {
-    position: relative;
-}
-
-#Logo {
-    font-family: Agency FB;
-    font-size: 30px;
-}
-
-#ImagenPrincipal {
-    background-color: rgba(0, 0, 0, 0.8);
-    filter: brightness(0.8);
-    width: 100%;
-    -webkit-box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.75);
-}
-
-#Texto-Principal {
-    font-family: Brush Script MT;
-    color: white;
-    position: absolute;
-    top: 350px;
-    left: 5%;
-    /* transform: translate(-50%, -50%); */
-}
-
-#Nombre {
-    font-size: 45px;
-}
-
-#Correo {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* text-align: center; */
-    display: block;
-    margin-top: -15px;
-}
-
-#SeccionTecnologias {}
-
-#Label-Tecnologias {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 60px;
-}
-
-#ContenedorTecnologias {
-    width: 100%;
-    display: inline-block;
-    align-items: center;
-    text-align: center;
-}
-
-.card {
-    margin-left: 50px;
-    margin-top: 30px;
-    width: 250px;
-    display: inline-block;
-    text-align: center;
-}
-
-.card-img-top {
-    width: 150px;
-    margin: auto;
-    margin-top: 15px;
-}
-
-.card-title {
-    font-weight: bold;
-}
-
-#SeccionAcercaDeMi {
-    display: block;
-    position: static;
-}
-
-#ContenedorAcercaDeMi {
-    width: 90%;
-    margin-left: 5%;
-}
-
-#ContenedorAcercaDeMi .jumbotron {
-    margin-top: 50px;
-    border-radius: 5px;
-}
-
-#SeccionProyectos {
-    align-items: center;
-    text-align: center;
-    margin-top: 200px;
-    width: 100%;
-    margin-bottom: 200px;
-}
-
-#Label-Proyectos {
-    text-align: center;
-    margin-top: 60px;
-}
-
-.card-proyectos {
-    width: 40%;
-    min-width: 200px;
-    /* max-height: 400px; */
-}
-
-.card-img-proyectos {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: 100%;
-}
-
-#btn-arriba {
-    padding: 15px;
-    font-size: 20px;
-    color: #fff;
-    cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #555;
-    border-color: #555;
-}
-
-#footer {
-    display: inline-block;
-    width: 100%;
-    height: 250px;
-    color: white;
-    background-color: #313036;
-}
-
-.icon {
-    color: white;
-    width: 200px;
-    height: 200px;
-}
-
-.icon:hover {
-    text-decoration: none;
-    color: white;
-    width: 50px;
-    height: 50px;
-}
+    html {
+        scroll-behavior: smooth;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    
+     ::-webkit-scrollbar-track {
+        background: #888;
+    }
+    /* Handle */
+    
+     ::-webkit-scrollbar-thumb {
+        background: #555;
+        border-radius: 5px;
+    }
+    /* Handle on hover */
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background: #35383D;
+    }
+    
+    hr {
+        width: 75%;
+    }
+    
+    .hr-card {
+        width: 100%;
+    }
+    
+    .navbar {
+        position: fixed;
+        width: 100%;
+        opacity: 70%;
+        background-color: #1F1E22;
+        z-index: 1;
+        height: 60px;
+    }
+    
+    .navbar-collapse {
+        position: relative;
+    }
+    
+    #Logo {
+        font-family: Agency FB;
+        font-size: 30px;
+    }
+    
+    #ImagenPrincipal {
+        background-color: rgba(0, 0, 0, 0.8);
+        filter: brightness(0.8);
+        width: 100%;
+        -webkit-box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.75);
+    }
+    
+    #Texto-Principal {
+        font-family: Brush Script MT;
+        color: white;
+        position: absolute;
+        top: 350px;
+        left: 5%;
+        /* transform: translate(-50%, -50%); */
+    }
+    
+    #Nombre {
+        font-size: 45px;
+    }
+    
+    #Correo {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        /* text-align: center; */
+        display: block;
+        margin-top: -15px;
+    }
+    
+    .triangle-down {
+        width: 0;
+        height: 0;
+        border-left: 110px solid transparent;
+        border-right: 110px solid transparent;
+        border-top: 65px solid #555;
+        opacity: 70%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .triangle-down:hover,
+    .triangle-up:hover {
+        opacity: 100%;
+    }
+    
+    .triangle-down:active,
+    .triangle-up:active {
+        opacity: 70%;
+    }
+    
+    #desplazador-primario {
+        margin-top: -100px;
+        border-top: 65px solid white;
+        opacity: 25%;
+    }
+    
+    #SeccionTecnologias {
+        margin-top: 70px;
+        width: 100%;
+    }
+    
+    #Label-Tecnologias {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 60px;
+    }
+    
+    #ContenedorTecnologias {
+        width: 100%;
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .card {
+        margin-left: 25px;
+        margin-right: 25;
+        margin-top: 30px;
+        width: 250px;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .card-img-top {
+        width: 150px;
+        margin: auto;
+        margin-top: 15px;
+    }
+    
+    .card-title {
+        font-weight: bold;
+    }
+    
+    #SeccionAcercaDeMi {
+        display: block;
+        position: static;
+    }
+    
+    #ContenedorAcercaDeMi {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    #ContenedorAcercaDeMi .jumbotron {
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+    
+    #SeccionProyectos {
+        align-items: center;
+        text-align: center;
+        margin-top: 200px;
+        width: 100%;
+        margin-bottom: 200px;
+    }
+    
+    #Label-Proyectos {
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+    .card-proyectos {
+        width: 40%;
+        min-width: 200px;
+        /* max-height: 400px; */
+    }
+    
+    .card-img-proyectos {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    
+    .triangle-up {
+        width: 0;
+        height: 0;
+        border-left: 110px solid transparent;
+        border-right: 110px solid transparent;
+        border-bottom: 50px solid #555;
+        opacity: 70%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    #btn-arriba {
+        padding: 15px;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #555;
+        border-color: #555;
+    }
+    
+    #footer {
+        display: inline-block;
+        width: 100%;
+        height: 250px;
+        color: white;
+        background-color: #313036;
+    }
+    
+    .icon {
+        color: white;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .icon:hover {
+        text-decoration: none;
+        color: white;
+        width: 50px;
+        height: 50px;
+    }
