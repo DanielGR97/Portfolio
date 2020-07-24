@@ -181,6 +181,23 @@
         width: 100%;
     }
     
+    #SeccionContactame {
+        padding: 300px;
+    }
+    
+    #SeccionContactame h1 {
+        text-align: center;
+    }
+    
+    #SeccionContactame input[type=text] {
+        width: 60%;
+    }
+    
+    #SeccionContactame input[type=submit] {
+        width: 20%;
+        float: right;
+    }
+    
     .triangle-up {
         width: 0;
         height: 0;
@@ -205,22 +222,25 @@
     }
     
     #footer {
-        display: inline-block;
+        display: inline-flex;
+        color: grey;
         width: 100%;
         height: 250px;
-        color: white;
         background-color: #313036;
+        padding: 40px;
+    }
+    
+    #ContenedorFooter a {
+        margin-top: 10px;
     }
     
     .icon {
-        color: white;
-        width: 200px;
-        height: 200px;
+        color: grey;
+        /* opacity: 50%; */
+        font-size: 30px;
     }
     
     .icon:hover {
-        text-decoration: none;
         color: white;
-        width: 50px;
-        height: 50px;
+        text-decoration: none;
     }
