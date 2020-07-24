@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Fonts/style.css">
     <link rel="icon" href="Logo-DG.PNG" type="image/png" />
+    <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+
 
 </head>
 
@@ -45,19 +47,14 @@
         <img id="ImagenPrincipal" src="notebook-1280538_1920-2.jpg" alt="">
         <div id="Texto-Principal">
             <label id="Nombre">Ing. Daniel Gonzalez</label>
-            <br>
-            <label id="Correo"> Daniel111397@gmail.com</label>
 
         </div>
-
-        <a href="#SeccionTecnologias">
-            <div class="triangle-down" id="desplazador-primario"></div>
-        </a>
-
+        <div id="Contenedor-desplazador-primario">
+            <a id="desplazador-primario" href="#SeccionTecnologias" class="btn icon-circle-down"></a>
+        </div>
     </div>
 
     <section id="SeccionTecnologias">
-        <hr>
         <h1 id="Label-Tecnologias"><i class="fas fa-h2">Tecnologías</i></h1>
         <div id="ContenedorTecnologias" class="w-100 p-3">
 
@@ -141,36 +138,39 @@
                 </div>
             </div>
             <br>
-            <a href="#SeccionAcercaDeMi">
-                <div class="triangle-down"></div>
-            </a>
+
+            <div>
+                <a href="#SeccionAcercaDeMi" class="btn icon-circle-down"></a>
+            </div>
         </div>
+
     </section>
 
     <section id="SeccionAcercaDeMi">
-        <hr>
         <h1 id="Label-Tecnologias"><i class="fas fa-h2">Acerca de mi</i></h1>
 
         <div id="ContenedorAcercaDeMi">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores velit quia, explicabo fuga reprehenderit mollitia consequatur dignissimos laborum, temporibus alias voluptate deserunt voluptates excepturi aliquam libero! Et aspernatur
-                        porro maxime! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus omnis quaerat facilis in provident est officia recusandae veniam nulla? Maiores dignissimos porro, sed voluptates dolorem quia quaerat nihil recusandae
-                        laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores velit quia, explicabo fuga reprehenderit mollitia consequatur dignissimos laborum, temporibus alias voluptate deserunt voluptates excepturi aliquam
-                        libero! Et aspernatur porro maxime! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus omnis quaerat facilis in provident est officia recusandae veniam nulla? Maiores dignissimos porro, sed voluptates dolorem quia
-                        quaerat nihil recusandae laboriosam.
+                    <p class="lead"><img src="yo.jpg" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores velit quia, explicabo fuga reprehenderit mollitia consequatur dignissimos laborum, temporibus alias voluptate deserunt voluptates excepturi
+                        aliquam libero! Et aspernatur porro maxime! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus omnis quaerat facilis in provident est officia recusandae veniam nulla? Maiores dignissimos porro, sed voluptates dolorem
+                        quia quaerat nihil recusandae laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores velit quia, explicabo fuga reprehenderit mollitia consequatur dignissimos laborum, temporibus alias voluptate deserunt
+                        voluptates excepturi aliquam libero! Et aspernatur porro maxime! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus omnis quaerat facilis in provident est officia recusandae veniam nulla? Maiores dignissimos porro,
+                        sed voluptates dolorem quia quaerat nihil recusandae laboriosam.
                     </p>
                 </div>
             </div>
+
+            <div>
+                <a href="#SeccionProyectos" class="btn icon-circle-down"></a>
+            </div>
         </div>
-        <a href="#SeccionProyectos">
-            <div class="triangle-down"></div>
-        </a>
+
+
     </section>
 
     <section id="SeccionProyectos">
         <div id="ContenedorProyectos">
-            <hr>
             <h1 id="Label-Proyectos"><i class="fas fa-h2">Proyectos</i></h1>
 
             <div class="card card-proyectos">
@@ -208,64 +208,72 @@
                     <button type="button" class="btn btn-Primary">Ver Demo</button>
                 </div>
             </div>
-
-
         </div>
-        <a href="#SeccionContactame">
-            <div class="triangle-down"></div>
-        </a>
+        <div>
+            <a href="#SeccionContactame" class="btn icon-circle-down"></a>
+        </div>
+
     </section>
-    <hr>
+
     <section id="SeccionContactame">
         <div>
             <h1><i class="fas fa-h1">Contactame</i></h1>
-            <form action="mailto:daniel111397@gmail.com" method="get" enctype="text/plain">
+            <form action="" method="get" enctype="text/plain">
 
                 <!-- Nombre de la persona -->
                 <label for="name">Nombre:</label>
-                <input type="text" class="form-control" name="name" id="name" placeholder="Ej: Pedro" />
+                <input type="text" class="form-control" name="name" id="name" placeholder="Ej: Pedro" required/>
 
                 <!-- Correo de la persona -->
                 <label for="email">Correo:</label>
-                <input type="text" name="email" id="email" class="form-control" placeholder="Ej: Pedro123@gmail.com" />
+                <input type="text" name="email" id="email" class="form-control" placeholder="Ej: Pedro123@gmail.com" required/>
 
                 <!-- Comentario de la persona -->
                 <label>Comentarios:</label>
                 <br />
-                <textarea name="comments" rows="12" cols="35" class="form-control" placeholder="Enviame tus comentarios"></textarea>
+                <textarea id="Cuerpo" name="comments" rows="5" cols="35" class="form-control" placeholder="Enviame tus comentarios" required></textarea>
 
 
                 <br>
 
                 <div>
-                    <input type="submit" name="submit" value="Enviar" class="form-control btn btn-Primary" />
+                    <input onclick="mailIt()" type="submit" name="submit" value="Enviar" class="form-control btn btn-Primary" />
                 </div>
             </form>
         </div>
 
-        <a href="#">
-            <div class="triangle-up"></div>
-        </a>
         <br>
-    </section>
 
-    <div>
-        <a href="#" id="btn-arriba" class="btn btn-primary icon-circle-up"></a>
-    </div>
-
-    <footer id="Footer">
-        <div id="ContenedorFooter">
+        <div id="ContenedorContactos">
 
             <a id="Telefono" class="icon icon-phone" target="_blank" href="" data-toggle="modal" data-target="#ModalTelefono">
                 <a href="https://www.facebook.com/danieleugenio.gonzalezramirez" class="icon icon-facebook" target="_blank"></a>
                 <a href="https://www.instagram.com/daniel.gonzalezr_/?hl=es-la" class="icon icon-instagram" target="_blank"></a>
                 <a href="skype:skype:daniel111397?userinfo" class="icon icon-skype" target="_blank"></a>
                 <a href="https://www.linkedin.com/in/daniel-gonzalez-8b7390119/" class="icon icon-linkedin2" target="_blank"></a>
-                <a class="icon icon-envelop" href=""></a>
+                <a class="icon icon-envelop" href="#ModalCorreo" target="_blank" href="" data-toggle="modal"></a>
 
         </div>
 
+    </section>
+
+
+
+    <div>
+        <a href="#" id="btn-arriba" class="btn btn-primary icon-circle-up"></a>
+    </div>
+
+    <br>
+    <br>
+    <footer id="Footer">
+        <svg viewBox="0 -20 700 110" width="100%" preserveAspectRatio="none">
+          <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="gray" />
+          <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#292A2D" />
+          <text id="FooterNombre" x="44%" y="80">Copyright© Ing. Daniel Gonzalez</text>
+        </svg>
+
     </footer>
+
 
     <!-- Modal Telefono-->
     <div class="modal fade" id="ModalTelefono" tabindex="-1" role="dialog" aria-labelledby="ModalTelefonoTitle" aria-hidden="true">
@@ -287,7 +295,47 @@
         </div>
     </div>
 
+    <!-- Modal Correo-->
+    <div class="modal fade" id="ModalCorreo" tabindex="-1" role="dialog" aria-labelledby="ModalCorreoTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Correo Electronico</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    Daniel111397@gmail.com
+                    <br> Daniel111397@outlook.com
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script>
+        function mailIt() {
+            name = document.getElementById("name").value;
+            email = document.getElementById("email").value;
+            cuerpo = document.getElementById("Cuerpo").value;
+            admin = "Daniel111397@gmail.com"; /* Put in your email address */
+
+            if (name != "" && email != "" && cuerpo != "") {
+
+                topic = "Contactame "; {
+                    parent.location.href = 'mailto:' + admin + '?subject=' + topic + ' ' + document.title + '&body=' + "Nombre: " + name + "%0D%0A" + "Email: " + email + "%0D%0A" + cuerpo;
+
+                }
+
+            } else {
+                alert("Complete los datos!");
+            }
+
+        }
+    </script>
 
 </body>
 
