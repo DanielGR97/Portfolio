@@ -195,7 +195,7 @@
     }
     
     #SeccionContactame input[type=text] {
-        width: 60%;
+        width: 100%;
     }
     
     #SeccionContactame input[type=submit] {
